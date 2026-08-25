@@ -1,0 +1,6 @@
+{
+  "name": "ប្រព័ន្ធគ្រប់គ្រងកំណត់ហេតុប្រជុំ គ.គ.ស.",
+  "description": "ប្រព័ន្ធគ្រប់គ្រង និងបង្កើតកំណត់ហេតុប្រជុំគណៈកម្មការគ្រប់គ្រងសាលារៀន (គ.គ.ស.) ទាំង ៧ លើក ជាមួយ AI និងហត្ថលេខាឌីជីថល",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

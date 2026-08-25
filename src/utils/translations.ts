@@ -1,0 +1,140 @@
+export type Language = 'km' | 'en';
+export type ThemeMode = 'light' | 'dark';
+export type ScreenSize = 'browser' | 'pc' | 'app' | 'phone';
+
+export const translations = {
+  km: {
+    // Header & Meta
+    appTitle: 'ប្រព័ន្ធគ្រប់គ្រងកំណត់ហេតុកិច្ចប្រជុំ គ.គ.ស.',
+    selectMeetingTitle: 'ជ្រើសរើសទម្រង់កិច្ចប្រជុំ គ.គ.ស. ទាំង ៧ លើក',
+    meetingCount: '៧ កិច្ចប្រជុំ',
+    documentView: 'ទិដ្ឋភាពឯកសារព្រីន',
+    editCards: 'កែប្រែកាតទិន្នន័យ',
+    addAttendance: 'វត្តមាន & ហត្ថលេខា',
+    printOrPdf: 'បោះពុម្ព (Print/PDF)',
+    save: 'រក្សាទុក',
+    saving: 'កំពុងរក្សាទុក...',
+    autoSaved: 'បានរក្សាទុកស្វ័យប្រវត្តិ',
+    autoSaving: 'កំពុងរក្សាទុកស្វ័យប្រវត្តិ...',
+    unsavedChanges: 'មានទិន្នន័យមិនទាន់រក្សាទុក',
+    resetTemplate: 'កំណត់ទម្រង់ដើមឡើងវិញ',
+    export: 'នាំចេញឯកសារ',
+    exportWord: 'ទាញយកជាឯកសារ Word (.doc)',
+    exportHtml: 'ទាញយកជាទំព័រ Web (.html)',
+    exportPdf: 'បោះពុម្ព / រក្សាទុកជា PDF',
+    exportJson: 'ទាញយកទិន្នន័យបម្រុង (JSON)',
+    
+    // Screen switcher
+    screenSize: 'ទំហំអេក្រង់',
+    screenBrowser: 'Fluid (ពេញអេក្រង់)',
+    screenPc: 'កុំព្យូទ័រ (PC Desktop)',
+    screenApp: 'ផ្ទាំង App (Dashboard)',
+    screenPhone: 'ទូរស័ព្ទ (Phone View)',
+
+    // Theme & Language
+    theme: 'ផ្ទៃពណ៌',
+    lightMode: 'ពន្លឺ (Light)',
+    darkMode: 'ងងឹត (Dark)',
+    language: 'ភាសា',
+    langKhmer: 'ខ្មែរ (KM)',
+    langEnglish: 'English (EN)',
+
+    // Card Editor titles
+    card1Title: 'កាតទី ១៖ ព័ត៌មានទូទៅនៃកិច្ចប្រជុំ',
+    card1Desc: 'បំពេញប្រធានបទ ស្ថាប័ន ទីកន្លែង កាលបរិច្ឆេទ និងម៉ោងប្រជុំ',
+    card2Title: 'កាតទី ២៖ កាលបរិច្ឆេទផ្លូវការ & AI Transform',
+    card2Desc: 'បង្កើតកាលបរិច្ឆេទចន្ទគតិ-សុរិយគតិ និងបម្លែងដោយស្វ័យប្រវត្តិ',
+    card3Title: 'កាតទី ៣៖ របៀបវារៈប្រជុំ',
+    card3Desc: 'កំណត់ចំណុចសំខាន់ៗដែលត្រូវលើកយកមកពិភាក្សា',
+    card4Title: 'កាតទី ៤៖ ដំណើរការប្រជុំ (Meeting Proceedings)',
+    card4Desc: 'សកម្មភាព និងការអនុវត្តជាក់ស្តែងក្នុងអង្គប្រជុំ រួមជាមួយរូបភាពសកម្មភាព',
+    card5Title: 'កាតទី ៥៖ សេចក្តីសង្ខេបកិច្ចប្រជុំ (Executive Summary)',
+    card5Desc: 'លទ្ធផល និងសេចក្តីសម្រេចគន្លឹះនៃកិច្ចប្រជុំ',
+    card6Title: 'កាតទី ៦៖ បញ្ជីវត្តមាន & ហត្ថលេខី',
+    card6Desc: 'សមាសភាពចូលរួមប្រជុំ និងហត្ថលេខាឌីជីថល',
+
+    // Buttons & Actions
+    aiTransform: 'បម្លែងស្វ័យប្រវត្តដោយ AI',
+    aiTransforming: 'AI កំពុងបម្លែង...',
+    addAgenda: 'បន្ថែមរបៀបវារៈ',
+    addProcess: 'បន្ថែមដំណើរការ',
+    addImage: 'បន្ថែមរូបភាពសកម្មភាព',
+    addAttendee: 'បន្ថែមសមាសភាពវត្តមាន',
+    edit: 'កែប្រែ',
+    delete: 'លុប',
+    close: 'បិទ',
+    confirm: 'យល់ព្រម',
+    cancel: 'បោះបង់',
+    signPad: 'គូសហត្ថលេខា',
+    clearSignature: 'សម្អាតហត្ថលេខា',
+    uploadSignature: 'ផ្ទុកឡើងរូបហត្ថលេខា',
+    officialAdminLayout: 'ទម្រង់ឯកសាររដ្ឋបាលផ្លូវការ (ត្រៀមបោះពុម្ព ឬទាញយកជា PDF)',
+  },
+  en: {
+    // Header & Meta
+    appTitle: 'SMC 7-Meeting Minutes Management System',
+    selectMeetingTitle: 'Select from 7 Official SMC Meeting Templates',
+    meetingCount: '7 Meetings',
+    documentView: 'Print / PDF Document View',
+    editCards: 'Edit Data Cards',
+    addAttendance: 'Attendance & Signatures',
+    printOrPdf: 'Print / Save PDF',
+    save: 'Save',
+    saving: 'Saving...',
+    autoSaved: 'Auto-saved',
+    autoSaving: 'Auto-saving...',
+    unsavedChanges: 'Unsaved Changes',
+    resetTemplate: 'Reset to Template',
+    export: 'Export',
+    exportWord: 'Download Word Doc (.doc)',
+    exportHtml: 'Download HTML Webpage (.html)',
+    exportPdf: 'Print / Save as PDF',
+    exportJson: 'Download Backup (JSON)',
+
+    // Screen switcher
+    screenSize: 'Screen Size',
+    screenBrowser: 'Fluid Browser',
+    screenPc: 'PC Desktop',
+    screenApp: 'App View',
+    screenPhone: 'Phone View',
+
+    // Theme & Language
+    theme: 'Theme Mode',
+    lightMode: 'Light Mode',
+    darkMode: 'Dark Mode',
+    language: 'Language',
+    langKhmer: 'Khmer (KM)',
+    langEnglish: 'English (EN)',
+
+    // Card Editor titles
+    card1Title: 'Card 1: General Meeting Info',
+    card1Desc: 'Meeting topic, school name, district, date, and time',
+    card2Title: 'Card 2: Official Date & AI Transform',
+    card2Desc: 'Solar/Lunar calendar conversion and AI text generation',
+    card3Title: 'Card 3: Meeting Agendas',
+    card3Desc: 'Key topics and discussion points',
+    card4Title: 'Card 4: Meeting Proceedings & Action Photos',
+    card4Desc: 'Step-by-step meeting actions with photos (4-column layout)',
+    card5Title: 'Card 5: Executive Summary',
+    card5Desc: 'Key takeaways and resolutions',
+    card6Title: 'Card 6: Attendance List & Signatories',
+    card6Desc: 'Participants list and digital signatures',
+
+    // Buttons & Actions
+    aiTransform: 'Auto Transform with AI',
+    aiTransforming: 'AI Generating...',
+    addAgenda: 'Add Agenda',
+    addProcess: 'Add Proceeding',
+    addImage: 'Add Action Photo',
+    addAttendee: 'Add Attendee',
+    edit: 'Edit',
+    delete: 'Delete',
+    close: 'Close',
+    confirm: 'Confirm',
+    cancel: 'Cancel',
+    signPad: 'Sign Name',
+    clearSignature: 'Clear Signature',
+    uploadSignature: 'Upload Signature Image',
+    officialAdminLayout: 'Official Administrative Document Layout (Ready to Print/Save PDF)',
+  }
+};
